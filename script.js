@@ -244,14 +244,14 @@ function setupMusicPlayer() {
 
 
 
-const finalYesBtn = document.getElementById("yesBtn3");
-const finalMessage = document.getElementById("finalMessage");
-const question3 = document.getElementById("question3");
+// const finalYesBtn = document.getElementById("yesBtn3");
+// const finalMessage = document.getElementById("finalMessage");
+// const question3 = document.getElementById("question3");
 
-finalYesBtn.addEventListener("click", () => {
-    question3.style.display = "none";     // hide last question
-    finalMessage.style.display = "block"; // show message below everything
-    finalMessage.scrollIntoView({ behavior: "smooth" }); // scroll down to it
-});
+// finalYesBtn.addEventListener("click", () => {
+//     question3.style.display = "none";     // hide last question
+//     finalMessage.style.display = "block"; // show message below everything
+//     finalMessage.scrollIntoView({ behavior: "smooth" }); // scroll down to it
+// });
 
 
