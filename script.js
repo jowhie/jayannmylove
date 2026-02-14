@@ -240,3 +240,22 @@ function setupMusicPlayer() {
         }
     });
 } 
+
+
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const programContent = document.getElementById("programContent");
+const finalMessage = document.getElementById("finalMessage");
+
+// NO button moves randomly
+noBtn.addEventListener("mouseover", () => {
+  noBtn.style.position = "absolute";
+  noBtn.style.left = Math.random() * (window.innerWidth - noBtn.offsetWidth) + "px";
+  noBtn.style.top = Math.random() * (window.innerHeight - noBtn.offsetHeight) + "px";
+});
+
+// YES button ends program
+yesBtn.addEventListener("click", () => {
+  programContent.style.display = "none";  // hide buttons
+  finalMessage.style.display = "block";   // show scrolling message
+});
