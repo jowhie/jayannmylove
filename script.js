@@ -249,11 +249,9 @@ const finalMessage = document.getElementById("finalMessage");
 const question3 = document.getElementById("question3");
 
 finalYesBtn.addEventListener("click", () => {
-    // Hide last question
-    question3.style.display = "none";
-
-    // Show final message
-    finalMessage.style.display = "block";
-    finalMessage.scrollIntoView({ behavior: "smooth" });
+    question3.style.display = "none";     // hide last question
+    finalMessage.style.display = "block"; // show message below everything
+    finalMessage.scrollIntoView({ behavior: "smooth" }); // scroll down to it
 });
+
 
