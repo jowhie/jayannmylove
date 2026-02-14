@@ -29,12 +29,13 @@ body {
   padding: 40px 20px;
   text-align: center;
   background-color: #f9f9f9;
+    border-radius: 10px;
 }
 
 .photos-section h2 {
   margin-bottom: 30px;
   font-size: 28px;
-  color: #333;
+  color: #ff4757;
 }
 
 .photos-gallery {
@@ -43,7 +44,7 @@ body {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-    border-radius: 10px;
+    
 }
 
 .photo-item {
