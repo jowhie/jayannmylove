@@ -242,16 +242,12 @@ function setupMusicPlayer() {
 } 
 
 
-// Grab the final Yes button
 const finalYesBtn = document.getElementById("yesBtn3");
 const finalMessage = document.getElementById("finalMessage");
 const question3 = document.getElementById("question3");
 
-// When the user clicks the final Yes button:
 finalYesBtn.addEventListener("click", () => {
-    // Hide question 3
-    question3.style.display = "none";
-
-    // Show scrolling final message
-    finalMessage.style.display = "block";
+    question3.style.display = "none";   // hide last question
+    finalMessage.style.display = "block"; // show box at the bottom
+    finalMessage.scrollIntoView({ behavior: "smooth" }); // scroll down to it
 });
